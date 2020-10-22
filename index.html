@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="style.css">
+	<title>Clip-path Transform Effects on Scroll</title>
+</head>
+
+<body>
+	<section class="banner">
+		<div>
+			<img src="img.jpg" alt="banner">
+		</div>
+	</section>
+	<div class="container">
+		<h2>Scroll To See Magic Again</h2>
+		<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque earum quo similique debitis nostrum! Dolorem et
+			atque provident! Voluptates totam consequatur doloremque eaque eos, officia explicabo quod obcaecati ab tempore
+			quae vitae magni? Ipsa, commodi tenetur magni fugit, debitis esse laborum et tempora dignissimos voluptate nulla
+			facilis non. Pariatur illo, non modi necessitatibus suscipit architecto natus aliquam, perferendis delectus veniam
+			tenetur officia ipsam fuga quod placeat blanditiis nostrum maxime similique magnam vitae sequi nemo, quisquam
+			voluptas doloribus. Fugiat, porro. Dicta totam voluptatum reiciendis hic perferendis saepe quae consequatur
+			mollitia quidem repellat, rerum culpa tempora, corporis libero in architecto quas accusantium voluptates
+			reprehenderit laudantium voluptatibus similique aperiam ea. Quo autem quod, mollitia praesentium provident
+			obcaecati animi fugit! Sit odit nemo rem consequuntur non voluptatibus modi doloremque praesentium enim! Deleniti
+			dolorum alias obcaecati architecto voluptates porro vero cum ut, nesciunt ducimus. Necessitatibus nemo ullam
+			sapiente asperiores ipsa velit earum id voluptatem totam amet, ipsam non, tempore adipisci dolorum? Doloribus ex
+			autem ad illum numquam tempore, facere reiciendis ab quod quisquam exercitationem nemo vel totam quasi ea odio
+			laborum? Rem esse doloremque ab minima illo quaerat possimus quasi repellendus nesciunt nihil maxime quidem
+			delectus sequi velit qui veritatis iusto voluptatibus beatae consequuntur molestias, nulla vero? Maxime corrupti,
+			deleniti exercitationem expedita dolores, reprehenderit modi natus eaque sunt maiores, eligendi dolore vitae cum
+			quaerat fuga iste perspiciatis? Quas perferendis in reprehenderit ab atque doloremque natus fuga? Perferendis
+			porro a nesciunt, recusandae soluta cumque unde iure, ex, saepe beatae nisi ad quo ullam assumenda facilis
+			deserunt eligendi repellat reprehenderit? Facilis illum corrupti incidunt eius optio fugiat, atque earum delectus
+			porro recusandae eaque nisi adipisci voluptatum ad, deleniti ipsa sequi ducimus in provident et perferendis,
+			molestias aut excepturi. Ea perspiciatis reprehenderit, ex esse autem eum cupiditate. Doloremque nisi harum dolor
+			quas nesciunt pariatur deleniti facere aspernatur maiores fuga in quidem numquam asperiores atque, obcaecati,
+			neque enim delectus amet. Eligendi, porro vero pariatur mollitia consectetur sit fuga hic temporibus ipsa! Eos
+			voluptas illo eum alias exercitationem, minus molestiae facilis voluptatibus optio nesciunt dicta impedit sequi,
+			explicabo repellat asperiores vitae corrupti veniam quasi possimus! Minus est optio quo ab, asperiores praesentium
+			ducimus architecto, iure id vero blanditiis atque nesciunt laudantium perferendis neque reiciendis. Dolores dicta
+			porro enim nulla iure, dignissimos odit eum, beatae impedit ipsum sit veniam ipsam voluptates aliquam ab. Rem
+			reiciendis ipsam libero! Exercitationem quo vitae alias error temporibus numquam officiis explicabo ad ratione
+			iure. Facilis illo error aliquid dolorum, assumenda perferendis provident enim, officiis magni omnis impedit,
+			nostrum mollitia obcaecati necessitatibus quis laudantium laboriosam porro tempora! Repellat debitis iste aliquid
+			vero dolorum error dolore odio provident deserunt dolor corporis commodi autem, aut maiores distinctio fuga, nihil
+			eveniet beatae animi. Suscipit facere necessitatibus incidunt totam placeat! Eius numquam molestias cupiditate
+			doloremque temporibus. Vel est odit mollitia quae eum, saepe facere dolorum perferendis consequuntur error ut
+			corrupti, eos harum praesentium veniam. A dolorum atque eveniet nemo libero delectus odit quaerat blanditiis?
+			Voluptatum error ad velit repudiandae quasi. Eligendi laudantium illum nulla veritatis enim atque provident,
+			officiis dolorum impedit!</p>
+	</div>
+	<script type="text/javascript">
+		const banner = document.querySelector('.banner');
+		window.addEventListener('scroll', () => {
+			const value = 800 - window.scrollY;
+			banner.style.clipPath = 'circle(' + value + 'px at center center)';
+		})
+	</script>
+</body>
+
+</html>
+
