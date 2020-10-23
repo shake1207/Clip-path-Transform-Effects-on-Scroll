@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
 	<link rel="stylesheet" href="style.css">
 	<title>Clip-path Transform Effects on Scroll</title>
 </head>
+
 <body>
 	<div class="loader">
 		<span>LOADING</span>
@@ -57,7 +59,7 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
 		crossorigin="anonymous"></script>
 	<script type="text/javascript">
-		$(document).ready(function () {
+		window.onload = function () {
 			$('.loader').fadeOut(1450);
 			$('.banner').fadeIn(1450);
 			$('.container').fadeIn(1450);
@@ -66,7 +68,8 @@
 				const value = 800 - window.scrollY;
 				banner.style.clipPath = 'circle(' + value + 'px at center center)';
 			})
-		})
+		}
 	</script>
 </body>
+
 </html>
